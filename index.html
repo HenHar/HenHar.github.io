@@ -6,26 +6,21 @@
     <title>Hendrik Ständker - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
 
 </head>
 <body>
 
 
 <!-- =================== HOME SECTION ===================================== -->
-<section id="home">
+<a class="nav-link" href="#home" data-translate="home">Home</a>
     <div class="container">
 
         <div class="about-img">
@@ -33,12 +28,12 @@
         </div>
 
         <div class="about-img">
-            <p><h3>👋 Hi, I'm Hendrik</h3></p>
-            <p>Software Developer</p>
+            <h3 data-translate="hi-im">👋 Hi, I'm Hendrik</h3>
+            <p data-translate="software-dev">Software Developer</p>
             <p>Machine Learning/Computer Vision</p>
             <p>Mobile App Development</p>
-            <a href=assets/resumee/CV_English.pdf download="CV_Hendrik_Staendker.pdf" class="btn btn-primary">Resume English</a>
-            <a href=assets/resumee/CV_German.pdf download="Lebenslauf_Hendrik_Ständker.pdf" class="btn btn-primary">Resume German</a>
+            <a href=assets/resumee/CV_English.pdf download="CV_Hendrik_Staendker.pdf" class="btn btn-primary" data-translate="cv_en">Resume English</a>
+            <a href=assets/resumee/CV_German.pdf download="Lebenslauf_Hendrik_Ständker.pdf" class="btn btn-primary" data-translate="cv_de">Resume German</a>
 
         </div>
     </div>
@@ -54,7 +49,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <div class="card-body">
-                        <div class="h4 mt-0 title">About</div>
+                        <div class="h4 mt-0 title" data-translate="about">About</div>
                         <p>Hi. My name is Hendrik Ständker. I am a passionate Machine Learning and Mobile App enthusiast. By manipulating images and using machine learning I can help solving a variety of computer vision tasks. I like to integrate machine learning into mobile applications using flutter for cross-platform development.</p>
                         <p>I offer excellent analytical and communication skills and with my problem-solving mindset I can help you with a variety of problems.</p>
                     </div>
@@ -62,12 +57,12 @@
 
                 <div class="col-lg-6 col-md-12">
                     <div class="card-body">
-                           <p><strong class="text-uppercase">Eduction:</strong></p>
-                                  <p>M.S. Informatics for the Natural Science, University Bielefeld</p>
-                                <p>B.E. Biomedical Engineering, University for applied Science Hamm-Lippstadt</p>
+                           <p><strong class="text-uppercase" data-translate="education">Eduction:</strong></p>
+                                  <p data-translate="master">M.S. Informatics for the Natural Science, University Bielefeld</p>
+                                <p data-translate="bachelor">B.E. Biomedical Engineering, University for applied Science Hamm-Lippstadt</p>
 
                         <p><strong class="text-uppercase">Personal:</strong></p>
-                                  <p>I am currently living togehter with my girlfriend and our dog as a digital nomad all over Europe. In particular for working and living full time at places at the countryside we have built a habitation box over the last year. I like to go hiking, rock climbing or playing the guitar.</p>
+                                  <p>I am currently living together with my girlfriend and our dog as a digital nomad all over Europe. In particular for working and living full time at places at the countryside we have built a habitation box over the last year. I like to go hiking, rock climbing or playing the guitar.</p>
 
                 </div>
 
@@ -81,7 +76,7 @@
 <!-- =================== SKILL SECTION ===================================== -->
 <section id="skills">
     <div class="container">
-        <div class="h4 text-center mb-4 title">Professional Skills</div>
+        <div class="h4 text-center mb-4 title" data-translate="skills">Professional Skills</div>
         <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <div class="card-body">
                 <b>Programming languages:</b> Python, Dart, C++, Java, HTML/CSS/Javascript<br><br>
@@ -166,7 +161,7 @@
 <section id="projects">
 
     <div class="container">
-        <div class="h4 text-center mb-4 title">Projects</div>
+        <div class="h4 text-center mb-4 title" data-translate="projects">Projects</div>
         <div class="masonry" data-aos="fade-up" data-aos-offset="10">
             <div class="mItem" data-toggle="modal" data-target="#particleAnalysis">
                 <div class="image-container">
@@ -308,7 +303,7 @@
 
 <section id="contact" class="contact-section text-center text-white bg-dark">
 
-    <h2>Contact Me</h2>
+    <h2 data-translate="contact">Contact Me</h2>
     <footer class="bg-body-tertiary text-center">
         <!-- Grid container -->
 
@@ -411,17 +406,33 @@
                     <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" data-translate="about" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#skills" data-translate="skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#projects" data-translate="projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#contact" data-translate="contact">Contact</a>
                 </li>
+
+                <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span id="currentFlag" class="fi fi-gb"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="#" data-language="en">
+                    <span class="fi fi-gb me-2"></span> English
+                </a>
+                <a class="dropdown-item" href="#" data-language="de">
+                    <span class="fi fi-de me-2"></span> Deutsch
+                </a>
+            </div>
+        </li>
+
+
             </ul>
         </div>
     </div>
@@ -781,6 +792,7 @@ Your browser does not support the video tag.
     AOS.init();
 </script>
 
+ <script src="language_switcher.js"></script>
 
 </body>
 </html>
