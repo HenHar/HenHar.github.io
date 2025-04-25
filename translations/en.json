@@ -1,16 +1,20 @@
 {
     "home": "Home",
-    "cv_en": "Resumee English",
-    "cv_de": "Resumme German",
-    "about": "About",
+    "cv-en": "Resumee English",
+    "cv-de": "Resumme German",
+    "about-title": "About",
+    "about-1": "Hi. My name is Hendrik Ständker. I am a passionate Machine Learning and Mobile App enthusiast. By manipulating images and using machine learning I can help solving a variety of computer vision tasks. I like to integrate machine learning into mobile applications using flutter for cross-platform development.",
+    "about-2": "I offer excellent analytical and communication skills and with my problem-solving mindset I can help you with a variety of problems.",
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact",
     "hi-im": "👋 Hi, I'm Hendrik",
     "software-dev": "Software Developer",
-    "about-title": "About",
-    "about-text": "Hi. My name is Hendrik Ständker. I am a passionate Machine Learning and Mobile App enthusiast...",
     "education": "Education",
     "master": "M.S. Informatics for the Natural Science, University Bielefeld",
-    "bachelor": "B.E. Biomedical Engineering, University for applied Science Hamm-Lippstadt"
+    "bachelor": "B.E. Biomedical Engineering, University for applied Science Hamm-Lippstadt",
+
+
+    "particle-overlay": "Particle analysis of spray image",
+    "click-for-more": "CLICK FOR MORE"
 }
