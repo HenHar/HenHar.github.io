@@ -80,6 +80,26 @@
         <div class="h4 text-center mb-4 title" data-translate="skills">Professional Skills</div>
         <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <div class="card-body">
+
+                <p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=aws,git,github,docker,linux,postgres,sqlite" />
+  </a>
+</p>
+
+
+                              <p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=py,bash,dart,flutter" />
+  </a>
+</p>
+
+
+                              <p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=opencv,ai,sklearn,tensorflow,pytorch" />
+  </a>
+</p>
                 <b>Programming languages:</b> Python, Dart, C++, Java, HTML/CSS/Javascript<br><br>
                 <b>Software Engineering:</b> Git, Docker, Github, OOP, Scrum, Unit Testing, AWS<br><br>
                 <b>Mobile App Devlopment:</b> Flutter, BloC, Firebase<br><br>
@@ -162,9 +182,22 @@
 <section id="projects">
 
     <div class="container">
+
         <div class="h4 text-center mb-4 title" data-translate="projects">Projects</div>
+
+                 <!-- Control buttons -->
+<div id="myBtnContainer">
+  <button class="btn-selection active" onclick="filterSelection('all')"> all</button>
+  <button class="btn-selection" onclick="filterSelection('cv')"> computer vision</button>
+  <button class="btn-selection" onclick="filterSelection('ai')"> ai</button>
+    <button class="btn-selection" onclick="filterSelection('mobile')"> mobile</button>
+    <button class="btn-selection" onclick="filterSelection('other')"> other</button>
+
+</div>
+
         <div class="masonry" data-aos="fade-up" data-aos-offset="10">
-            <div class="mItem" data-toggle="modal" data-target="#particleAnalysis">
+
+            <div class="mItem filterDiv cv" data-toggle="modal" data-target="#particleAnalysis">
                 <div class="image-container">
                     <div class="project-image">
                         <img src="assets/images/particle_analysis/output2.png">
@@ -178,7 +211,7 @@
                 </div>
             </div>
 
-            <div class="mItem" data-toggle="modal" data-target="#skinLesionProcessing">
+            <div class="mItem filterDiv cv" data-toggle="modal" data-target="#skinLesionProcessing">
                 <div class="image-container">
                     <div class="project-image">
                         <img src="assets/images/skin_lesion_processing/skin_lesion_analysis.png">
@@ -192,7 +225,21 @@
                 </div>
             </div>
 
-            <div class="mItem" data-toggle="modal" data-target="#skinDetectionFlutter">
+                <div class="mItem filterDiv mobile" data-toggle="modal" data-target="#fuelPriceApp">
+                <div class="image-container">
+                    <div class="project-image">
+                        <img src="assets/images/skin_lesion_processing/skin_lesion_analysis.png">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <p>Show fuel prices as a map</p>
+                            <p data-translate="click-for-more">CLICK FOR MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mItem filterDiv mobile cv" data-toggle="modal" data-target="#skinDetectionFlutter">
                 <div class="image-container">
                     <div class="project-image">
                         <img src="assets/images/skin_lesion_app/skin_cancer_flutter.png">
@@ -207,7 +254,7 @@
             </div>
 
 
-            <div class="mItem" data-toggle="modal" data-target="#truckCamper">
+            <div class="mItem filterDiv other" data-toggle="modal" data-target="#truckCamper">
                 <div class="image-container">
                     <div class="project-image">
                         <img src="assets/images/truck_camper/camper.png">
@@ -221,7 +268,7 @@
                 </div>
             </div>
 
-            <div class="mItem" data-toggle="modal" data-target="#imageRegistration">
+            <div class="mItem filterDiv cv" data-toggle="modal" data-target="#imageRegistration">
                 <div class="image-container">
                     <div class="project-image">
                         <img src="assets/images/image_registration/image_registration.jpg">
@@ -235,7 +282,7 @@
                 </div>
             </div>
 
-             <div class="mItem" data-toggle="modal" data-target="#lenseDetection">
+             <div class="mItem filterDiv cv" data-toggle="modal" data-target="#lenseDetection">
                 <div class="image-container">
                     <div class="project-image">
                         <img src="assets/images/lense_detection/lenseDetection.png">
@@ -249,7 +296,7 @@
                 </div>
             </div>
 
-                <div class="mItem" data-toggle="modal" data-target="#flappyBirds">
+                <div class="mItem filterDiv ai" data-toggle="modal" data-target="#flappyBirds">
                 <div class="image-container">
                     <div class="project-image">
                         <img src="assets/images/flappy_birds/gameplay.gif">
@@ -264,7 +311,7 @@
             </div>
 
 
-               <div class="mItem" data-toggle="modal" data-target="#imagePins">
+               <div class="mItem filterDiv cv" data-toggle="modal" data-target="#imagePins">
                 <div class="image-container">
                     <div class="project-image">
                         <img src="assets/images/image_pins/cover_image.png">
@@ -278,7 +325,7 @@
                 </div>
             </div>
 
-                     <div class="mItem" data-toggle="modal" data-target="#recipeBot">
+                     <div class="mItem filterDiv ai" data-toggle="modal" data-target="#recipeBot">
                 <div class="image-container">
                     <div class="project-image">
                         <img src="assets/images/recipe_bot_rag/cover.png">
@@ -741,7 +788,7 @@ Your browser does not support the video tag.
 
 
 
-<!-- Image Pins-->
+<!-- recipe bot -->
 <div class="modal fade" id="recipeBot" tabindex="-1" role="dialog" aria-labelledby="recipeBotTitle"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -768,7 +815,7 @@ Your browser does not support the video tag.
                     href="https://github.com/HenHar/recipe_bot_rag"
                     target="_blank"
                     role="button"
-            ><i class="bi bi-github fa-2x"></i></a>
+            ><i class="bi bi-github fa-2x"></i></a>card textff
 
 
                          <a
@@ -776,12 +823,48 @@ Your browser does not support the video tag.
                     title="Test the bot."
                     class="btn btn-default btn-circle text-center"
                     style="background-color: rgba(194,3,3,0.6); color: black; font-weight: bold;"
-                    href="https://52.59.229.76.nip.io/recipe_bot/"
+                    href="https://recipebotrag-q9we8ux5m3ifmgpc5hmjh9.streamlit.app/"
                     target="_blank"
                     role="button"
             ><i class="material-icons" style="font-size:40px">terminal</i>
 </a>
 
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- fuel price app -->
+<div class="modal fade" id="fuelPriceApp" tabindex="-1" role="dialog" aria-labelledby="lenseDetectionTitle"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fuelPriceAppTitle">Lense detection model</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p style="max-width: 600px">A lense detection model should be integrated into an existing mobile app in flutter. </p>
+                <div style="text-align: left">
+                        <iframe src="./web/index.html" frameborder="0" width="100%" height="800px"></iframe>
+
+                    <ul>
+                        <li>Tensorflow lite for integration of the model into mobile app</li>
+                        <li>Selecting model based on realtime capabilities</li>
+                        <li>Data gathering and annotation of images</li>
+                        <li>Use of transfer learning and hyperparameter optimisation</li>
+                    </ul>
+
+                     <video width="320" height="240" controls>
+  <source src="assets/images/lense_detection/lenseDetection.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
                 </div>
                 <div class="modal-footer">
                 </div>
@@ -808,6 +891,7 @@ Your browser does not support the video tag.
 </script>
 
  <script src="language_switcher.js"></script>
+ <script src="project_filter.js"></script>
 
 </body>
 </html>
