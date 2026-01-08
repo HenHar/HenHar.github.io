@@ -1,17 +1,23 @@
 {
-    "home": "Start",
+
+
+
+ "about": "Über mich",
+     "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "testimonials": "Rezensionen",
+    "contact": "Kontakt",
+
+
+
     "cv-en": "Lebenslauf Englisch",
     "cv-de": "Lebenslauf Deutsch",
     "about-heading": "Über mich",
-    "about-1": "Hi. Mein Name ist Hendrik Ständker. Ich bin.... a passionate Machine Learning and Mobile App enthusiast. By manipulating images and using machine learning I can help solving a variety of computer vision tasks. I like to integrate machine learning into mobile applications using flutter for cross-platform development.",
-    "about-2": "Ich biete excellent analytical and communication skills and with my problem-solving mindset I can help you with a variety of problems.",
-    "skills": "Fähigkeiten",
-    "projects": "Projekte",
-    "contact": "Kontakt",
+  "about-1": "Hi. Mein Name ist Hendrik Ständker und ich bin freiberuflicher Softwareentwickler. Überwiegend arbeite ich im Bereich KI, Bildverarbeitung und der mobilen Appentwicklung.",
+  "about-2": "Ich biete ausgezeichnete analytischen Fähigkeiten und mit durch mein ausgeprägtes lösungsorientiertes Denken kann ich bei einer Vielzahl an Problemen helfen.",
     "hi-im": "👋 Hallo, ich bin Hendrik",
     "software-dev": "Software Entwickler",
     "about-title": "Über mich",
-    "about-text": "Hallo. Mein Name ist Hendrik Ständker. Ich bin ein leidenschaftlicher Machine Learning und Mobile App Enthusiast...",
     "education": "Ausbildung",
     "master": "M.S. Naturwissenschaftliche Informatik, Universität Bielefeld",
     "bachelor": "B.E. Biomedizinische Technologien, Hochschule Hamm-Lippstadt",

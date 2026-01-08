@@ -13,7 +13,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
 
 </head>
@@ -21,11 +20,11 @@
 
 
 <!-- =================== HOME SECTION ===================================== -->
-<a class="nav-link" href="#home" data-translate="home">Home</a>
-    <div class="container">
+<section id="home">
 
+    <div class="container">
         <div class="about-img">
-            <img src="assets/images/profile_picture.png" alt="Placeholder for your profile picture">
+            <img src="assets/images/profile.jpeg" alt="Placeholder for your profile picture">
         </div>
 
         <div class="about-img">
@@ -75,107 +74,73 @@
 
 
 <!-- =================== SKILL SECTION ===================================== -->
-<section id="skills">
-    <div class="container">
-        <div class="h4 text-center mb-4 title" data-translate="skills">Professional Skills</div>
-        <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <div class="card-body">
-
-                <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=aws,git,github,docker,linux,postgres,sqlite" />
-  </a>
-</p>
-
-
-                              <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,bash,dart,flutter" />
-  </a>
-</p>
-
-
-                              <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=opencv,ai,sklearn,tensorflow,pytorch" />
-  </a>
-</p>
-                <b>Programming languages:</b> Python, Dart, C++, Java, HTML/CSS/Javascript<br><br>
-                <b>Software Engineering:</b> Git, Docker, Github, OOP, Scrum, Unit Testing, AWS<br><br>
-                <b>Mobile App Devlopment:</b> Flutter, BloC, Firebase<br><br>
-                <b>Machine Learning/Data Science:</b> Tensorflow, PyTorch, OpenCv, Scikit-learn, imageJ, numpy, WEKA, Searborn/Matplotlib<br><br>
-            </div>
-        </div>
-
-
-        <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="progress-container progress-primary"><span class="progress-badge">Python</span>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
-                                     data-aos-offset="10"
-                                     data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 90%;"></div>
-                                <span class="progress-value">9/10</span>
-                            </div>
+ <section id="skills">
+        <div class="container">
+            <div class="h4 text-center mb-4 title" data-translate="skills">Professional Skills</div>
+            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="card-body">
+                    <div class="skill-category mb-2">
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge"><i class="fab fa-python mr-1"></i> Python</span>
+                            <span class="skill-badge"><i class="bi bi-code-slash mr-1"></i> Dart</span>
+                            <span class="skill-badge"><i class="bi bi-filetype-cpp mr-1"></i> C++</span>
+                            <span class="skill-badge"><i class="fab fa-java mr-1"></i> Java</span>
+                            <span class="skill-badge"><i class="fab fa-html5 mr-1"></i> HTML/CSS/JS</span>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="progress-container progress-primary"><span
-                                class="progress-badge">Flutter/Dart</span>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
-                                     data-aos-offset="10"
-                                     data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 80%;"></div>
-                                <span class="progress-value">8/10</span>
-                            </div>
+
+                    <div class="skill-category mb-2">
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge"><i class="bi bi-cloud-arrow-down mr-1"></i> REST APIs</span>
+                            <span class="skill-badge"><i class="fab fa-git-alt mr-1"></i> Git/Github</span>
+                            <span class="skill-badge"><i class="bi bi-infinity mr-1"></i> CI/CD</span>
+                            <span class="skill-badge"><i class="bi bi-check2-circle mr-1"></i> Unit Testing</span>
+                            <span class="skill-badge"><i class="bi bi-people-fill mr-1"></i> Scrum</span>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="progress-container progress-primary"><span class="progress-badge">C++</span>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
-                                     data-aos-offset="10"
-                                     data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 60%;"></div>
-                                <span class="progress-value">6/10</span>
-                            </div>
+
+                    <div class="skill-category mb-2">
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge"><i class="fab fa-linux mr-1"></i> Linux</span>
+                            <span class="skill-badge"><i class="fab fa-docker mr-1"></i> Docker</span>
+                            <span class="skill-badge"><i class="bi bi-box-seam mr-1"></i> Kubernetes</span>
+                            <span class="skill-badge"><i class="fab fa-aws mr-1"></i> AWS</span>
+                            <span class="skill-badge"><i class="fab fa-google mr-1"></i> Google Cloud</span>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="progress-container progress-primary"><span class="progress-badge">Java</span>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
-                                     data-aos-offset="10"
-                                     data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 50%;"></div>
-                                <span class="progress-value">5/10</span>
-                            </div>
+
+                    <div class="skill-category mb-2">
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge"><i class="bi bi-database mr-1"></i> PostgreSQL</span>
+                            <span class="skill-badge"><i class="bi bi-search mr-1"></i> Vector database</span>
+                            <span class="skill-badge"><i class="bi bi-robot mr-1"></i> RAG</span>
+                            <span class="skill-badge"><i class="bi bi-database-fill-gear mr-1"></i> MongoDB</span>
+                            <span class="skill-badge"><i class="bi bi-file-earmark-code mr-1"></i> SQLite</span>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="progress-container progress-primary"><span class="progress-badge">HTML/CSS</span>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-aos="progress-full"
-                                     data-aos-offset="10"
-                                     data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 50%;"></div>
-                                <span class="progress-value">5/10</span>
-                            </div>
+
+                    <div class="skill-category mb-2">
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge"><i class="bi bi-phone mr-1"></i> Flutter</span>
+                            <span class="skill-badge"><i class="bi bi-layers mr-1"></i> BloC</span>
+                            <span class="skill-badge"><i class="bi bi-fire mr-1"></i> Firebase</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge"><i class="bi bi-cpu mr-1"></i> OpenAI</span>
+                            <span class="skill-badge"><i class="bi bi-shield-check mr-1"></i> pydantic</span>
+                            <span class="skill-badge"><i class="bi bi-node-plus mr-1"></i> n8n</span>
+                            <span class="skill-badge"><i class="bi bi-brain mr-1"></i> Tensorflow</span>
+                            <span class="skill-badge"><i class="bi bi-activity mr-1"></i> PyTorch</span>
+                            <span class="skill-badge"><i class="bi bi-eye mr-1"></i> OpenCv</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 <!-- =================== PROJECTS SECTION ===================================== -->
@@ -225,10 +190,24 @@
                 </div>
             </div>
 
+                 <div class="mItem filterDiv ai" data-toggle="modal" data-target="#pdfProcessing">
+                <div class="image-container">
+                    <div class="project-image">
+                        <img src="assets/images/pdf_processing/pdf_processing.png">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <p>Document Analysis</p>
+                            <p data-translate="click-for-more">CLICK FOR MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
                 <div class="mItem filterDiv mobile" data-toggle="modal" data-target="#fuelPriceApp">
                 <div class="image-container">
                     <div class="project-image">
-                        <img src="assets/images/skin_lesion_processing/skin_lesion_analysis.png">
+                        <img src="assets/images/fuel_price/img.png">
                     </div>
                     <div class="overlay">
                         <div class="overlay-text">
@@ -340,6 +319,19 @@
             </div>
 
 
+                     <div class="mItem filterDiv other" data-toggle="modal" data-target="#website">
+                <div class="image-container">
+                    <div class="project-image">
+                        <img src="assets/images/website_julia/img.png">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <p>Portfolio Website</p>
+                            <p data-translate="click-for-more">CLICK FOR MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -356,15 +348,12 @@
         <!-- Grid container -->
 
         <p><i class="bi bi-envelope"></i> hendrik.staendker@live.de</p>
-
-        <p><i class="bi bi-telephone"></i> +491717595454</p>
+        <p><i class="bi bi-telephone"></i> +49 15679 719468 <a href="https://wa.me/4915679719468" target="_blank" class="text-white ml-2"><i class="bi bi-whatsapp"></i></a></p>
 
         <button type="button" class="btn btn-default btn-lg btn-round"><span class="glyphicon glyphicon-retweet"></span>
         </button>
         <!-- Section: Social media -->
         <section class="mb-2">
-
-
             <!-- LeetCode -->
             <a
                     data-mdb-ripple-init
@@ -376,7 +365,6 @@
                     role="button"
             ><i class="icon-leetcode"></i
             ></a>
-
 
                <!-- Upwork -->
             <a
@@ -418,15 +406,10 @@
         </div>
         <!-- Grid container -->
 
-
             <h6>Developed by Hendrik Ständker</h6>
-
         <!-- Copyright -->
-
         <a href="https://www.freepik.com/free-vector/geometric-abstract-background-with-connected-dots-lines_25861911.htm#fromView=search&page=1&position=45&uuid=6fe7e979-5679-47c7-9706-93873ba23000">Background image
             by vector_corp on Freepik</a>
-
-
 
         <div class="text-center p-3">
             © 2024 Copyright: Hendrik Ständker
@@ -589,7 +572,7 @@ Your browser does not support the video tag.
                     </ul>
 
                       <img src="assets/images/image_registration/image_registration.jpg" class="d-block w-100"
-                             alt="image_registration.jpg" loading="lazy">
+                           alt="image_registration.jpg" loading="lazy">
 
                 </div>
                 <div class="modal-footer">
@@ -630,8 +613,6 @@ Your browser does not support the video tag.
                     target="_blank"
                     role="button"
             ><i class="bi bi-github fa-2x"></i></a>
-
-
                     </ul>
                 </div>
                 <div class="modal-footer">
@@ -746,6 +727,63 @@ Your browser does not support the video tag.
     </div>
 </div>
 
+<!-- Website-->
+<div class="modal fade" id="website" tabindex="-1" role="dialog" aria-labelledby="particleAnalysisTitle"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="websiteTitle">Portfolio Website</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                    <img src="assets/images/website_julia/img.png" class="d-block w-100" alt="..." loading="lazy">
+
+                <div class="modal-footer">
+                          <a
+                    data-mdb-ripple-init
+                    title="Test the bot."
+                    class="btn btn-default btn-circle text-center"
+                    style="background-color: rgba(194,3,3,0.6); color: black; font-weight: bold;"
+                    href="https://juliaschelper.github.io"
+                    target="_blank"
+                    role="button"
+            ><i class="material-icons" style="font-size:40px">arrow_forward</i>
+</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="pdfProcessing" tabindex="-1" role="dialog" aria-labelledby="particleAnalysisTitle"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pdfProcessingTitle">Skin lesion analysis</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: left">
+                    <ul>
+                        <li>EfficientNet CNN with Transfer Learning on HAM10000 dataset</li>
+                        <li>U-Net for lesion segmentation.</li>
+                        <li>OpenCv Image Processing for Feature Analysis for ABCDE lesion analysis</li>
+                    </ul>
+
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- Image Pins-->
@@ -784,8 +822,6 @@ Your browser does not support the video tag.
         </div>
     </div>
 </div>
-
-
 
 
 <!-- recipe bot -->
@@ -852,7 +888,7 @@ Your browser does not support the video tag.
             <div class="modal-body">
                 <p style="max-width: 600px">A lense detection model should be integrated into an existing mobile app in flutter. </p>
                 <div style="text-align: left">
-                        <iframe src="./web/index.html" frameborder="0" width="100%" height="800px"></iframe>
+                        <iframe src="assets/web/index.html" frameborder="0" width="100%" height="800px"></iframe>
 
                     <ul>
                         <li>Tensorflow lite for integration of the model into mobile app</li>
